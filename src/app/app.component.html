@@ -1,7 +1,10 @@
 <h1 class ='trening'>Angular App</h1>
 <h1 [style.color] = "!bool"> Style Binding</h1>
-<h2 [class.check] = "bool"> Angular text</h2>
+<h2 [class.check] = "!bool ? 'red': 'blue'"> Angular text</h2>
 <p>{{message}}</p>
 <img src="{{imgUrl}}" alt="fotka">
 <!-- <img [src]="imgUrl" alt="focia"> -->
-<h3></h3>
+<h3> Text to verify</h3>
+<button (click)="buttonClick()"> Click Me</button>
+<input type="text" (keyup.enter)="onKeyUp($event)">
+<input type="text" [(ngModel)] = "userName">

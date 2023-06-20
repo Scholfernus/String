@@ -11,4 +11,17 @@ export class AppComponent {
   imgUrl:string = 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZhaD7uyglrQGYSUZ6lgpET6W-oUiNliF1DA&usqp=CAU'
 bool:boolean = true;
 
+  userName!: string;
+buttonClick() {
+  console.log('Button click event works !');
+  
 }
+// onKeyUp($event: any){
+//   console.log($event.keyCode);  
+//   if($event.keyCode == 13){
+//     console.log("Enter key pressed");    
+onKeyUp($event: any){ 
+    console.log(this.userName);
+}
+}
+
